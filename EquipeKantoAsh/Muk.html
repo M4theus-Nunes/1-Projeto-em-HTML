@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muk</title>
+    <link rel="icon" href="imagem/icone.png">
+
+    <style>
+        /*FonteTexto*/
+
+        @font-face {
+            font-family: 'Flexo';
+            src: url('Fonte/Flexo-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Flexo', sans-serif;
+            font-size: 90%;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+
+        .pokemons {
+            display: flex;
+            /* Alterado para flex para permitir o alinhamento lado a lado */
+            margin-left: 55px;
+            margin-right: 55px;
+            align-items: first baseline;
+            /* Alinha os itens verticalmente */
+
+        }
+
+
+        .pokemons img {
+            width: 300px;
+            height: auto;
+            background-image: url(imagem/pokebola.png);
+            background-position: center;
+            background-size: contain;
+            background-color: #363636;
+            border-radius: 15px;
+        }
+
+        .genero img {
+            width: 25px;
+            background-color: #242527;
+        }
+
+        .pokemons figure:hover {
+            transform: scale(1.1);
+        }
+
+
+        .pokemons figure {
+            display: inline-block;
+            margin: 10px;
+            background-color: #242527;
+            border-radius: 10px;
+            padding: 15px 5px;
+            transition: transform 0.3s ease;
+            display: inline-block;
+            box-shadow: 0px 0px 50px #a040a0;
+        }
+
+
+        .pokemons tipo {
+            display: inline-block;
+            border: 3px solid #1f1f20;
+            border-radius: 10px;
+            padding: 3px 15px;
+            margin: -1px;
+            height: auto;
+            font-family: arial;
+            font-size: 25px;
+        }
+
+
+        .text {
+            max-width: 800px;
+            /* Define a largura máxima do texto */
+            margin-left: 50px;
+            /* Margem à esquerda para separar a imagem do texto */
+            text-align: justify;
+            /* Alinha o texto à esquerda */
+            font-size: 16px;
+        }
+
+        .configTabela {
+            background-color: #242527;
+            display: inline-block;
+            padding: 12px 12px;
+            border-radius: 10px;
+            margin-left: 50px;
+        }
+
+        table {
+            border-collapse: separate;
+            width: 700px;
+            margin: auto;
+            background-color: #242527;
+        }
+
+        th,
+        td {
+            border: 3px solid #363636;
+            border-radius: 7px;
+            font-size: 16px;
+            text-align: center;
+            padding: 5px 5px;
+        }
+
+        th {
+            color: #a040a0
+        }
+
+        #informacoes {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+#habilidade {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#habilidade2 {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+    </style>
+</head>
+
+<!--Background-->
+
+<body style="background-image: url(imagem/background.png)">
+
+    <!--Logo-->
+    <div style="background-color: #242527;margin: -8px; box-shadow: 0px 0px 30px #a040a0">
+        <img src="imagem/Ash_Do_Pokemon.png" width="465px" alt="LogoPokemonAsh" title="PokemonsAsh">
+    </div>
+
+    <!--Titulo-->
+    <h1 style="font-size: 70px; color: #a040a0;"><strong>Muk</strong></h1>
+
+
+    <div class="pokemons">
+
+        <!--Muk-->
+
+        <figure style="margin-top: 10px">
+            <figcaption style="color:rgb(255, 255, 255); font-size: 200%">N° 0089</figcaption>
+            <a href="Index.html" ;>
+                <img src="imagem/MukG.png" alt="Muk" title="Muk">
+            </a>
+            <figcaption style="font-size:300%">Muk</figcaption>
+            <tipo style="background-color: #a040a0; ">Veneno</tipo>
+        </figure>
+
+
+        <div>
+            <div class="text">
+
+                <p>Muk é um Pokémon singular que se destaca por sua aparência incomum e características únicas. Com uma
+                    massa viscosa e escura envolvendo seu corpo, Muk emana uma aura de mistério e estranheza. Sua forma
+                    fluida e maleável permite que ele se adapte a diferentes ambientes, enquanto seus olhos intensos
+                    brilham através da escuridão, transmitindo uma sensação de inquietação. Dotado de uma composição
+                    química tóxica, Muk pode liberar gases venenosos de seu corpo, tornando-se uma presença temida tanto
+                    na natureza quanto em batalhas Pokémon.
+                </p>
+                <p>Apesar de sua aparência repulsiva, Muk demonstra uma inteligência surpreendente e uma lealdade
+                    profunda para com treinadores habilidosos. Quando treinado com paciência e compreensão, ele pode
+                    canalizar sua natureza venenosa de maneira controlada, tornando-se um aliado poderoso em confrontos.
+                    No entanto, é fundamental para os treinadores entenderem e respeitarem os limites de Muk, evitando
+                    provocar reações negativas que possam resultar em perigosas emissões de toxinas. Com a orientação
+                    certa, Muk revela-se um companheiro valioso, capaz de proteger seu treinador com sua presença
+                    imponente e habilidades venenosas.
+                </p>
+
+            </div>
+
+            <br>
+            <div class="configTabela" id="informacoes">
+                <h1 style="margin-top: 0px; text-align: center;">Informações do Pokémon</h1>
+                <div class="genero">
+                    <table>
+                        <tr>
+                            <th>Altura</th>
+                            <th>Peso</th>
+                            <th>Categoria</th>
+                            <th>Genero</th>
+                            <th>Habilidade</th>
+                        </tr>
+
+                        <tr>
+                            <td>1,2m</td>
+                            <td>30,0kg</td>
+                            <td>Pokémon Lodo</td>
+                            <td><img src="imagem/icon_male.png"><sup>/</sup><img src="imagem/icon_female.png"></td>
+                            <td style="position: relative;">
+                                Stench<br>
+                                <img src="imagem/icon_question.png"
+                                    style="position: absolute; top: 5px; right: 2px; width: 20px; cursor: pointer;"
+                                    id="botaoImagem" alt="Botão Imagem" onclick="trocarTexto()">
+                                    Sticky Hold&nbsp;
+                                <img src="imagem/icon_question.png"
+                                    style="position: absolute; top: 25px; right: 2px; width: 20px; cursor: pointer;"
+                                    id="botaoImagem" alt="Botão Imagem" onclick="trocarTexto1()">
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+            <div style="position: relative;">
+                <div class="configTabela" id="habilidade"
+                    style="display:none; position: absolute;  right:38px; width: 330px;">
+                    <h1 style="margin-top: 0px; color:#a040a0;">Stench</h1>
+                    <p style="margin: 3px;font-size: 16px; text-align: left;">Ao liberar fedor ao atacar, este Pokémon
+                        pode fazer o alvo recuar.
+                    </p>
+                    <img src="imagem/icon_close.png"
+                        style="background-color: #242527; position: absolute; top: 5px; right: 5px; width: 40px; cursor: pointer;"
+                        id="botaoImagem" alt="Botão Imagem" onclick="trocarTexto()">
+                </div>
+
+                <div class="configTabela" id="habilidade2"
+                    style="display:none; position: absolute;  right:38px; width: 330px;">
+                    <h1 style="margin-top: 0px; color:#a040a0;">Sticky Hold</h1>
+                    <p style="margin: 3px;font-size: 16px; text-align: left;">Os itens mantidos pelo Pokémon ficam
+                        presos rapidamente e não podem ser removidos por outros Pokémon.</p>
+                    <img src="imagem/icon_close.png"
+                        style="background-color: #242527; position: absolute; top: 5px; right: 5px; width: 40px; cursor: pointer;"
+                        id="botaoImagem" alt="Botão Imagem" onclick="trocarTexto1()">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function trocarTexto() {
+        var informacoes = document.getElementById("informacoes");
+        var habilidade = document.getElementById("habilidade");
+    
+        if (informacoes.style.display !== "none") {
+            informacoes.style.opacity = 0;
+            setTimeout(function() {
+                informacoes.style.display = "none";
+                habilidade.style.display = "inline-block";
+                setTimeout(function() {
+                    habilidade.style.opacity = 1;
+                }, 50); // Um pequeno atraso para garantir que a transição ocorra após a mudança de visibilidade
+            }, 500); // Tempo correspondente à transição de opacidade
+        } else {
+            habilidade.style.opacity = 0;
+            setTimeout(function() {
+                habilidade.style.display = "none";
+                informacoes.style.display = "inline-block";
+                setTimeout(function() {
+                    informacoes.style.opacity = 1;
+                }, 50); // Um pequeno atraso para garantir que a transição ocorra após a mudança de visibilidade
+            }, 500); // Tempo correspondente à transição de opacidade
+        }
+    }
+
+    function trocarTexto1() {
+        var informacoes = document.getElementById("informacoes");
+        var habilidade2 = document.getElementById("habilidade2");
+    
+        if (informacoes.style.display !== "none") {
+            informacoes.style.opacity = 0;
+            setTimeout(function() {
+                informacoes.style.display = "none";
+                habilidade2.style.display = "inline-block";
+                setTimeout(function() {
+                    habilidade2.style.opacity = 1;
+                }, 50); // Um pequeno atraso para garantir que a transição ocorra após a mudança de visibilidade
+            }, 500); // Tempo correspondente à transição de opacidade
+        } else {
+            habilidade2.style.opacity = 0;
+            setTimeout(function() {
+                habilidade2.style.display = "none";
+                informacoes.style.display = "inline-block";
+                setTimeout(function() {
+                    informacoes.style.opacity = 1;
+                }, 50); // Um pequeno atraso para garantir que a transição ocorra após a mudança de visibilidade
+            }, 500); // Tempo correspondente à transição de opacidade
+        }
+    }
+    </script>
+
+
+</body>
+
+</html>

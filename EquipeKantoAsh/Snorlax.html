@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snorlax</title>
+    <link rel="icon" href="imagem/icone.png">
+
+    <style>
+        /*FonteTexto*/
+
+        @font-face {
+            font-family: 'Flexo';
+            src: url('Fonte/Flexo-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Flexo', sans-serif;
+            font-size: 90%;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+
+        .pokemons {
+            display: flex;
+            /* Alterado para flex para permitir o alinhamento lado a lado */
+            margin-left: 55px;
+            margin-right: 55px;
+            align-items: first baseline;
+            /* Alinha os itens verticalmente */
+
+        }
+
+
+        .pokemons img {
+            width: 300px;
+            height: auto;
+            background-image: url(imagem/pokebola.png);
+            background-position: center;
+            background-size: contain;
+            background-color: #363636;
+            border-radius: 15px;
+        }
+
+        .genero img {
+            width: 25px;
+            background-color: #242527;
+        }
+
+        .pokemons figure:hover {
+            transform: scale(1.1);
+        }
+
+
+        .pokemons figure {
+            display: inline-block;
+            margin: 10px;
+            background-color: #242527;
+            border-radius: 10px;
+            padding: 15px 5px;
+            transition: transform 0.3s ease;
+            display: inline-block;
+            box-shadow: 0px 0px 50px #a8a878;
+        }
+
+
+        .pokemons tipo {
+            display: inline-block;
+            border: 3px solid #1f1f20;
+            border-radius: 10px;
+            padding: 3px 15px;
+            margin: -1px;
+            height: auto;
+            font-family: arial;
+            font-size: 25px;
+        }
+
+
+        .text {
+            max-width: 800px;
+            /* Define a largura máxima do texto */
+            margin-left: 50px;
+            /* Margem à esquerda para separar a imagem do texto */
+            text-align: justify;
+            /* Alinha o texto à esquerda */
+            font-size: 16px;
+        }
+
+        .configTabela {
+            background-color: #242527;
+            display: inline-block;
+            padding: 12px 12px;
+            border-radius: 10px;
+            margin-left: 50px;
+        }
+
+        table {
+            border-collapse: separate;
+            width: 700px;
+            margin: auto;
+            background-color: #242527;
+        }
+
+        th,
+        td {
+            border: 3px solid #363636;
+            border-radius: 7px;
+            font-size: 16px;
+            text-align: center;
+            padding: 5px 5px;
+        }
+
+        th {
+            color: #a8a878
+        }
+
+        #informacoes {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+#habilidade {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#habilidade2 {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+    </style>
+</head>
+
+<!--Background-->
+
+<body style="background-image: url(imagem/background.png)">
+
+    <!--Logo-->
+    <div style="background-color: #242527;margin: -8px; box-shadow: 0px 0px 30px #a8a878">
+        <img src="imagem/Ash_Do_Pokemon.png" width="465px" alt="LogoPokemonAsh" title="PokemonsAsh">
+    </div>
+
+    <!--Titulo-->
+    <h1 style="font-size: 70px; color: #a8a878;"><strong>Snorlax</strong></h1>
+
+
+    <div class="pokemons">
+
+        <!--Snorlax-->
+
+        <figure>
+            <figcaption style="color:rgb(255, 255, 255); font-size: 200%">N° 0143</figcaption>
+            <a href="Index.html">
+                <img src="imagem/SnorlaxG.png" alt="Snorlax" title="Snorlax">
+            </a>
+            <figcaption style="font-size:300%">Snorlax</figcaption>
+            <tipo style="background-color: #a8a878; ">Normal</tipo>
+        </figure>
+
+
+        <div>
+            <div class="text">
+
+                <p>Snorlax é uma figura imponente e colosal no mundo dos Pokémon, reconhecido por sua imensa estatura e
+                    natureza serena. Com sua pelagem espessa e cor azul escura contrastando com sua barriga branca
+                    volumosa, Snorlax emana uma sensação de tranquilidade e tranquilidade. Seus olhos sonolentos e
+                    expressão pacífica escondem uma força formidável, capaz de despertar quando necessário para proteger
+                    seus territórios ou responder a desafios.
+                </p>
+                <p>Apesar de sua reputação de ser preguiçoso e adormecido na maior parte do tempo, Snorlax é um Pokémon
+                    de grande poder e resistência. Ele é capaz de absorver ataques poderosos com sua densa camada de
+                    gordura e responder com golpes devastadores quando provocado. Sua voracidade lendária por comida
+                    também é bem conhecida, muitas vezes interrompendo vias de transporte ou bloqueando passagens
+                    enquanto se alimenta em seu sono profundo. No entanto, quando desperto, Snorlax revela-se um aliado
+                    confiável e protetor, pronto para defender seus amigos e território com uma determinação inabalável.
+                </p>
+
+            </div>
+
+            <br>
+            <div class="configTabela" id="informacoes">
+                <h1 style="margin-top: 0px; text-align: center;">Informações do Pokémon</h1>
+                <div class="genero">
+                    <table>
+                        <tr>
+                            <th>Altura</th>
+                            <th>Peso</th>
+                            <th>Categoria</th>
+                            <th>Genero</th>
+                            <th>Habilidade</th>
+                        </tr>
+
+                        <tr>
+                            <td>2,1m</td>
+                            <td>460,0kg</td>
+                            <td>Pokémon Dorminhoco</td>
+                            <td><img src="imagem/icon_male.png"><sup>/</sup><img src="imagem/icon_female.png"></td>
+                            <td style="position: relative;">
+                                Immunite<br>
+                                <img src="imagem/icon_question.png"
+                                    style="position: absolute; top: 5px; right: 2px; width: 20px; cursor: pointer;"
+                                    id="botaoImagem" alt="Botão Imagem" onclick="trocarTexto()">
+                                Thick Fat
+                                <img src="imagem/icon_question.png"
+                                    style="position: absolute; top: 25px; right: 2px; width: 20px; cursor: pointer;"
+                                    id="botaoImagem" alt="Botão Imagem" onclick="trocarTexto1()">
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+            <div style="position: relative;">
+                <div class="configTabela" id="habilidade"
+                    style="display:none; position: absolute;  right:38px; width: 330px;">
+                    <h1 style="margin-top: 0px; color:#a8a878;">Immunity</h1>
+                    <p style="margin: 3px;font-size: 16px; text-align: left;">O sistema imunológico do Pokémon evita que
+                        ele seja envenenado.
+                    </p>
+                    <img src="imagem/icon_close.png"
+                        style="background-color: #242527; position: absolute; top: 5px; right: 5px; width: 40px; cursor: pointer;"
+                        id="botaoImagem" alt="Botão Imagem" onclick="trocarTexto()">
+                </div>
+
+                <div class="configTabela" id="habilidade2"
+                    style="display:none; position: absolute;  right:38px; width: 330px;">
+                    <h1 style="margin-top: 0px; color:#a8a878;">Thick Fat</h1>
+                    <p style="margin: 3px;font-size: 16px; text-align: left;">O Pokémon é protegido por uma camada
+                        espessa de gordura, que reduz pela metade o dano sofrido por movimentos do tipo Fogo e Gelo.</p>
+                    <img src="imagem/icon_close.png"
+                        style="background-color: #242527; position: absolute; top: 5px; right: 5px; width: 40px; cursor: pointer;"
+                        id="botaoImagem" alt="Botão Imagem" onclick="trocarTexto1()">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function trocarTexto() {
+        var informacoes = document.getElementById("informacoes");
+        var habilidade = document.getElementById("habilidade");
+    
+        if (informacoes.style.display !== "none") {
+            informacoes.style.opacity = 0;
+            setTimeout(function() {
+                informacoes.style.display = "none";
+                habilidade.style.display = "inline-block";
+                setTimeout(function() {
+                    habilidade.style.opacity = 1;
+                }, 50); // Um pequeno atraso para garantir que a transição ocorra após a mudança de visibilidade
+            }, 500); // Tempo correspondente à transição de opacidade
+        } else {
+            habilidade.style.opacity = 0;
+            setTimeout(function() {
+                habilidade.style.display = "none";
+                informacoes.style.display = "inline-block";
+                setTimeout(function() {
+                    informacoes.style.opacity = 1;
+                }, 50); // Um pequeno atraso para garantir que a transição ocorra após a mudança de visibilidade
+            }, 500); // Tempo correspondente à transição de opacidade
+        }
+    }
+
+    function trocarTexto1() {
+        var informacoes = document.getElementById("informacoes");
+        var habilidade2 = document.getElementById("habilidade2");
+    
+        if (informacoes.style.display !== "none") {
+            informacoes.style.opacity = 0;
+            setTimeout(function() {
+                informacoes.style.display = "none";
+                habilidade2.style.display = "inline-block";
+                setTimeout(function() {
+                    habilidade2.style.opacity = 1;
+                }, 50); // Um pequeno atraso para garantir que a transição ocorra após a mudança de visibilidade
+            }, 500); // Tempo correspondente à transição de opacidade
+        } else {
+            habilidade2.style.opacity = 0;
+            setTimeout(function() {
+                habilidade2.style.display = "none";
+                informacoes.style.display = "inline-block";
+                setTimeout(function() {
+                    informacoes.style.opacity = 1;
+                }, 50); // Um pequeno atraso para garantir que a transição ocorra após a mudança de visibilidade
+            }, 500); // Tempo correspondente à transição de opacidade
+        }
+    }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeape</title>
+    <link rel="icon" href="imagem/icone.png">
+
+    <style>
+        /*FonteTexto*/
+
+        @font-face {
+            font-family: 'Flexo';
+            src: url('Fonte/Flexo-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Flexo', sans-serif;
+            font-size: 90%;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+
+        .pokemons {
+            display: flex;
+            /* Alterado para flex para permitir o alinhamento lado a lado */
+            margin-left: 55px;
+            margin-right: 55px;
+            align-items: first baseline;
+            /* Alinha os itens verticalmente */
+
+        }
+
+
+        .pokemons img {
+            width: 300px;
+            height: auto;
+            background-image: url(imagem/pokebola.png);
+            background-position: center;
+            background-size: contain;
+            background-color: #363636;
+            border-radius: 15px;
+        }
+
+        .genero img {
+            width: 25px;
+            background-color: #242527;
+        }
+
+        .pokemons figure:hover {
+            transform: scale(1.1);
+        }
+
+
+        .pokemons figure {
+            display: inline-block;
+            margin: 10px;
+            background-color: #242527;
+            border-radius: 10px;
+            padding: 15px 5px;
+            transition: transform 0.3s ease;
+            display: inline-block;
+            box-shadow: 0px 0px 50px #903028;
+        }
+
+
+        .pokemons tipo {
+            display: inline-block;
+            border: 3px solid #1f1f20;
+            border-radius: 10px;
+            padding: 3px 15px;
+            margin: -1px;
+            height: auto;
+            font-family: arial;
+            font-size: 25px;
+        }
+
+
+        .text {
+            max-width: 800px;
+            /* Define a largura máxima do texto */
+            margin-left: 50px;
+            /* Margem à esquerda para separar a imagem do texto */
+            text-align: justify;
+            /* Alinha o texto à esquerda */
+            font-size: 16px;
+        }
+
+        .configTabela {
+            background-color: #242527;
+            display: inline-block;
+            padding: 12px 12px;
+            border-radius: 10px;
+            margin-left: 50px;
+        }
+
+        table {
+            border-collapse: separate;
+            width: 700px;
+            margin: auto;
+            background-color: #242527;
+        }
+
+        th,
+        td {
+            border: 3px solid #363636;
+            border-radius: 7px;
+            font-size: 16px;
+            text-align: center;
+            padding: 5px 5px;
+        }
+
+        th {
+            color: #903028
+        }
+
+        #informacoes {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+#habilidade {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#habilidade2 {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+    </style>
+</head>
+
+<!--Background-->
+
+<body style="background-image: url(imagem/background.png)">
+
+    <!--Logo-->
+    <div style="background-color: #242527; margin: -8px; box-shadow: 0px 0px 30px #903028">
+        <img src="imagem/Ash_Do_Pokemon.png" width="465px" alt="LogoPokemonAsh" title="PokemonsAsh">
+    </div>
+
+    <!--Titulo-->
+    <h1 style="font-size: 70px; color: #903028;"><strong>Primeape</strong></h1>
+
+
+    <div class="pokemons">
+
+        <!--Primeape-->
+
+        <figure style="margin-top: 10px">
+            <figcaption style="color:rgb(255, 255, 255); font-size: 200%">N° 0057</figcaption>
+            <a href="Index.html">
+                <img src="imagem/PrimeapeG.png" alt="Primeape" title="Primeape">
+            </a>
+            <figcaption style="font-size:300%">Primeape</figcaption>
+            <tipo style="background-color: #903028; ">Lutador</tipo>
+        </figure>
+
+
+        <div>
+            <div class="text">
+
+                <p>Primeape é um Pokémon ágil e musculoso, conhecido por sua natureza feroz e explosiva. Com sua pele
+                    coberta por uma pelagem densa de cor marrom, e seus olhos avermelhados emanando intensidade,
+                    Primeape exala uma aura de determinação e força. Seus membros poderosos e garras afiadas evidenciam
+                    sua habilidade em combate corpo a corpo, tornando-o um adversário temido por muitos treinadores.
+                    Movido por uma mistura de instinto selvagem e desejo de vitória, Primeape é conhecido por sua
+                    determinação implacável em batalha, nunca recuando diante de um desafio.
+                </p>
+                <p>Apesar de sua personalidade explosiva e propensão para se irritar facilmente, Primeape também
+                    demonstra uma ligação forte com treinadores habilidosos que conseguem ganhar sua confiança. Quando
+                    treinado adequadamente, ele canaliza sua energia formidável de maneira disciplinada, tornando-se um
+                    aliado poderoso e leal. No entanto, é crucial para os treinadores entenderem e respeitarem a
+                    natureza temperamental de Primeape, equilibrando sua ferocidade com estratégia e paciência. Com a
+                    orientação certa, Primeape se transforma em um parceiro formidável, capaz de superar desafios e
+                    alcançar grandes feitos ao lado de seu treinador.
+                </p>
+
+            </div>
+
+            <br>
+            <div class="configTabela" id="informacoes">
+                <h1 style="margin-top: 0px; text-align: center;">Informações do Pokémon</h1>
+                <div class="genero">
+                    <table>
+                        <tr>
+                            <th>Altura</th>
+                            <th>Peso</th>
+                            <th>Categoria</th>
+                            <th>Genero</th>
+                            <th>Habilidade</th>
+                        </tr>
+
+                        <tr>
+                            <td>1,0m</td>
+                            <td>32,0kg</td>
+                            <td>Pokémon Macaco Porco</td>
+                            <td><img src="imagem/icon_male.png"><sup>/</sup><img src="imagem/icon_female.png"></td>
+                            <td style="position: relative;">
+                                Vital Spirit<br>
+                                <img src="imagem/icon_question.png"
+                                    style="position: absolute; top: 5px; right: 2px; width: 20px; cursor: pointer;"
+                                    id="botaoImagem" alt="Botão Imagem" onclick="trocarTexto()">
+                                    Anger Point
+                                <img src="imagem/icon_question.png"
+                                    style="position: absolute; top: 25px; right: 2px; width: 20px; cursor: pointer;"
+                                    id="botaoImagem" alt="Botão Imagem" onclick="trocarTexto1()">
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+            <div style="position: relative;">
+                <div class="configTabela" id="habilidade"
+                    style="display:none; position: absolute;  right:38px; width: 330px;">
+                    <h1 style="margin-top: 0px; color:#903028;">Vital Spirit</h1>
+                    <p style="margin: 3px;font-size: 16px; text-align: left;">O Pokémon está cheio de vitalidade e isso
+                        o impede de adormecer.</p>
+                    <img src="imagem/icon_close.png"
+                        style="background-color: #242527; position: absolute; top: 5px; right: 5px; width: 40px; cursor: pointer;"
+                        id="botaoImagem" alt="Botão Imagem" onclick="trocarTexto()">
+                </div>
+
+                <div class="configTabela" id="habilidade2"
+                    style="display:none; position: absolute;  right:38px; width: 330px;">
+                    <h1 style="margin-top: 0px; color:#903028;">Anger Point</h1>
+                    <p style="margin: 3px;font-size: 16px; text-align: left;">Uma casca dura protege o Pokémon de
+                        ataques críticos.</p>
+                    <img src="imagem/icon_close.png"
+                        style="background-color: #242527; position: absolute; top: 5px; right: 5px; width: 40px; cursor: pointer;"
+                        id="botaoImagem" alt="Botão Imagem" onclick="trocarTexto1()">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function trocarTexto() {
+        var informacoes = document.getElementById("informacoes");
+        var habilidade = document.getElementById("habilidade");
+    
+        if (informacoes.style.display !== "none") {
+            informacoes.style.opacity = 0;
+            setTimeout(function() {
+                informacoes.style.display = "none";
+                habilidade.style.display = "inline-block";
+                setTimeout(function() {
+                    habilidade.style.opacity = 1;
+                }, 50); // Um pequeno atraso para garantir que a transição ocorra após a mudança de visibilidade
+            }, 500); // Tempo correspondente à transição de opacidade
+        } else {
+            habilidade.style.opacity = 0;
+            setTimeout(function() {
+                habilidade.style.display = "none";
+                informacoes.style.display = "inline-block";
+                setTimeout(function() {
+                    informacoes.style.opacity = 1;
+                }, 50); // Um pequeno atraso para garantir que a transição ocorra após a mudança de visibilidade
+            }, 500); // Tempo correspondente à transição de opacidade
+        }
+    }
+
+    function trocarTexto1() {
+        var informacoes = document.getElementById("informacoes");
+        var habilidade2 = document.getElementById("habilidade2");
+    
+        if (informacoes.style.display !== "none") {
+            informacoes.style.opacity = 0;
+            setTimeout(function() {
+                informacoes.style.display = "none";
+                habilidade2.style.display = "inline-block";
+                setTimeout(function() {
+                    habilidade2.style.opacity = 1;
+                }, 50); // Um pequeno atraso para garantir que a transição ocorra após a mudança de visibilidade
+            }, 500); // Tempo correspondente à transição de opacidade
+        } else {
+            habilidade2.style.opacity = 0;
+            setTimeout(function() {
+                habilidade2.style.display = "none";
+                informacoes.style.display = "inline-block";
+                setTimeout(function() {
+                    informacoes.style.opacity = 1;
+                }, 50); // Um pequeno atraso para garantir que a transição ocorra após a mudança de visibilidade
+            }, 500); // Tempo correspondente à transição de opacidade
+        }
+    }
+    </script>
+
+
+
+</body>
+
+</html>

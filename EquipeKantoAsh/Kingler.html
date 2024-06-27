@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingler</title>
+    <link rel="icon" href="imagem/icone.png">
+
+    <style>
+        /*FonteTexto*/
+
+        @font-face {
+            font-family: 'Flexo';
+            src: url('Fonte/Flexo-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Flexo', sans-serif;
+            font-size: 90%;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+
+        .pokemons {
+            display: flex;
+            /* Alterado para flex para permitir o alinhamento lado a lado */
+            margin-left: 55px;
+            margin-right: 55px;
+            align-items: first baseline;
+            /* Alinha os itens verticalmente */
+
+        }
+
+
+        .pokemons img {
+            width: 300px;
+            height: auto;
+            background-image: url(imagem/pokebola.png);
+            background-position: center;
+            background-size: contain;
+            background-color: #363636;
+            border-radius: 15px;
+        }
+
+        .genero img {
+            width: 25px;
+            background-color: #242527;
+        }
+
+        .pokemons figure:hover {
+            transform: scale(1.1);
+        }
+
+
+        .pokemons figure {
+            display: inline-block;
+            margin: 10px;
+            background-color: #242527;
+            border-radius: 10px;
+            padding: 15px 5px;
+            transition: transform 0.3s ease;
+            display: inline-block;
+            box-shadow: 0px 0px 50px #6890f0;
+        }
+
+
+        .pokemons tipo {
+            display: inline-block;
+            border: 3px solid #1f1f20;
+            border-radius: 10px;
+            padding: 3px 15px;
+            margin: -1px;
+            height: auto;
+            font-family: arial;
+            font-size: 25px;
+        }
+
+
+        .text {
+            max-width: 800px;
+            /* Define a largura máxima do texto */
+            margin-left: 50px;
+            /* Margem à esquerda para separar a imagem do texto */
+            text-align: justify;
+            /* Alinha o texto à esquerda */
+            font-size: 16px;
+        }
+
+        .configTabela {
+            background-color: #242527;
+            display: inline-block;
+            padding: 12px 12px;
+            border-radius: 10px;
+            margin-left: 50px;
+        }
+
+        table {
+            border-collapse: separate;
+            width: 700px;
+            margin: auto;
+            background-color: #242527;
+        }
+
+        th,
+        td {
+            border: 3px solid #363636;
+            border-radius: 7px;
+            font-size: 16px;
+            text-align: center;
+            padding: 5px 5px;
+        }
+
+        th {
+            color: #6890f0
+        }
+
+        #informacoes {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+#habilidade {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#habilidade2 {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+    </style>
+</head>
+
+<!--Background-->
+
+<body style="background-image: url(imagem/background.png)">
+
+    <!--Logo-->
+    <div style="background-color: #242527;margin: -8px; box-shadow: 0px 0px 30px #6890f0">
+        <img src="imagem/Ash_Do_Pokemon.png" width="465px" alt="LogoPokemonAsh" title="PokemonsAsh">
+    </div>
+
+    <!--Titulo-->
+    <h1 style="font-size: 70px; color: #6890f0;"><strong>Kingler</strong></h1>
+
+
+    <div class="pokemons">
+
+        <!--Kingler-->
+
+        <figure style="margin-top: 10px">
+            <figcaption style="color:rgb(255, 255, 255); font-size: 200%">N° 0099</figcaption>
+            <a href="Index.html">
+                <img src="imagem/KinglerG.png" alt="Kingler" title="Kingler">
+            </a>
+            <figcaption style="font-size:300%">Kingler</figcaption>
+            <tipo style="background-color: #6890f0;">Água</tipo>
+        </figure>
+
+
+
+        <div>
+            <div class="text">
+
+                <p>Kingler é um Pokémon aquático do tipo Água, caracterizado por sua carapaça robusta e garras
+                    imponentes. Com uma aparência intimidante e imponente, Kingler exala uma aura de poder e
+                    determinação. Suas garras enormes são suas principais armas, capazes de esmagar até mesmo as conchas
+                    mais resistentes com facilidade, tornando-o um adversário formidável em batalhas subaquáticas e
+                    terrestres.
+                </p>
+                <p>Além de sua força física impressionante, Kingler é conhecido por sua natureza territorial e
+                    protetora. Este Pokémon defende ferozmente seu território e sua prole, exibindo uma lealdade feroz
+                    aos seus companheiros de grupo. Sua evolução a partir de Krabby representa não apenas um aumento de
+                    tamanho e poder, mas também uma maturação de suas habilidades e instintos de sobrevivência, tornando
+                    Kingler uma escolha valorizada por treinadores que buscam um parceiro confiável e resistente.
+                </p>
+
+            </div>
+
+            <br>
+            <div class="configTabela" id="informacoes">
+                <h1 style="margin-top: 0px; text-align: center;">Informações do Pokémon</h1>
+                <div class="genero">
+                    <table>
+                        <tr>
+                            <th>Altura</th>
+                            <th>Peso</th>
+                            <th>Categoria</th>
+                            <th>Genero</th>
+                            <th>Habilidade</th>
+                        </tr>
+
+                        <tr>
+                            <td>1,3m</td>
+                            <td>60,0kg</td>
+                            <td>Pokémon Pinça</td>
+                            <td><img src="imagem/icon_male.png"><sup>/</sup><img src="imagem/icon_female.png"></td>
+                            <td style="position: relative;">
+                                Hyper Cutter<br>
+                                <img src="imagem/icon_question.png"
+                                    style="position: absolute; top: 5px; right: 2px; width: 20px; cursor: pointer;"
+                                    id="botaoImagem" alt="Botão Imagem" onclick="trocarTexto()">
+                                Shell Armor
+                                <img src="imagem/icon_question.png"
+                                    style="position: absolute; top: 25px; right: 2px; width: 20px; cursor: pointer;"
+                                    id="botaoImagem" alt="Botão Imagem" onclick="trocarTexto1()">
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+            <div style="position: relative;">
+                <div class="configTabela" id="habilidade"
+                    style="display:none; position: absolute;  right:38px; width: 330px;">
+                    <h1 style="margin-top: 0px; color:#6890f0;">Hyper Cutter</h1>
+                    <p style="margin: 3px;font-size: 16px; text-align: left;">O Pokémon tem orgulho de suas pinças
+                        poderosas. Eles evitam que outros Pokémon diminuam suas estatísticas de ataque.</p>
+                    <img src="imagem/icon_close.png"
+                        style="background-color: #242527; position: absolute; top: 5px; right: 5px; width: 40px; cursor: pointer;"
+                        id="botaoImagem" alt="Botão Imagem" onclick="trocarTexto()">
+                </div>
+
+                <div class="configTabela" id="habilidade2"
+                    style="display:none; position: absolute;  right:38px; width: 330px;">
+                    <h1 style="margin-top: 0px; color:#6890f0;">Shell Armor</h1>
+                    <p style="margin: 3px;font-size: 16px; text-align: left;">Uma casca dura protege o Pokémon de
+                        ataques críticos.</p>
+                    <img src="imagem/icon_close.png"
+                        style="background-color: #242527; position: absolute; top: 5px; right: 5px; width: 40px; cursor: pointer;"
+                        id="botaoImagem" alt="Botão Imagem" onclick="trocarTexto1()">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function trocarTexto() {
+        var informacoes = document.getElementById("informacoes");
+        var habilidade = document.getElementById("habilidade");
+    
+        if (informacoes.style.display !== "none") {
+            informacoes.style.opacity = 0;
+            setTimeout(function() {
+                informacoes.style.display = "none";
+                habilidade.style.display = "inline-block";
+                setTimeout(function() {
+                    habilidade.style.opacity = 1;
+                }, 50); // Um pequeno atraso para garantir que a transição ocorra após a mudança de visibilidade
+            }, 500); // Tempo correspondente à transição de opacidade
+        } else {
+            habilidade.style.opacity = 0;
+            setTimeout(function() {
+                habilidade.style.display = "none";
+                informacoes.style.display = "inline-block";
+                setTimeout(function() {
+                    informacoes.style.opacity = 1;
+                }, 50); // Um pequeno atraso para garantir que a transição ocorra após a mudança de visibilidade
+            }, 500); // Tempo correspondente à transição de opacidade
+        }
+    }
+
+    function trocarTexto1() {
+        var informacoes = document.getElementById("informacoes");
+        var habilidade2 = document.getElementById("habilidade2");
+    
+        if (informacoes.style.display !== "none") {
+            informacoes.style.opacity = 0;
+            setTimeout(function() {
+                informacoes.style.display = "none";
+                habilidade2.style.display = "inline-block";
+                setTimeout(function() {
+                    habilidade2.style.opacity = 1;
+                }, 50); // Um pequeno atraso para garantir que a transição ocorra após a mudança de visibilidade
+            }, 500); // Tempo correspondente à transição de opacidade
+        } else {
+            habilidade2.style.opacity = 0;
+            setTimeout(function() {
+                habilidade2.style.display = "none";
+                informacoes.style.display = "inline-block";
+                setTimeout(function() {
+                    informacoes.style.opacity = 1;
+                }, 50); // Um pequeno atraso para garantir que a transição ocorra após a mudança de visibilidade
+            }, 500); // Tempo correspondente à transição de opacidade
+        }
+    }
+    </script>
+
+</body>
+
+</html>

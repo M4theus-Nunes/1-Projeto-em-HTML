@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pikachu</title>
+    <link rel="icon" href="imagem/icone.png">
+
+    <style>
+        /*FonteTexto*/
+
+        @font-face {
+            font-family: 'Flexo';
+            src: url('Fonte/Flexo-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Flexo', sans-serif;
+            font-size: 90%;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+
+        .pokemons {
+            display: flex;
+            /* Alterado para flex para permitir o alinhamento lado a lado */
+            margin-left: 55px;
+            margin-right: 55px;
+            align-items: first baseline;
+            /* Alinha os itens verticalmente */
+
+        }
+
+
+        .pokemons img {
+            width: 300px;
+            height: auto;
+            background-image: url(imagem/pokebola.png);
+            background-position: center;
+            background-size: contain;
+            background-color: #363636;
+            border-radius: 15px;
+        }
+
+        .genero img {
+            width: 25px;
+            background-color: #242527;
+        }
+
+        .pokemons figure:hover {
+            transform:scale(1.1);
+
+        }
+
+
+        .pokemons figure {
+            display: inline-block;
+            margin: 10px;
+            background-color: #242527;
+            border-radius: 10px;
+            padding: 15px 5px;
+            transition:transform 0.3s ease;
+            display: inline-block;
+            box-shadow: 0px 0px 50px #ceac27;
+        }
+
+
+        .pokemons tipo {
+            display: inline-block;
+            border: 3px solid #1f1f20;
+            border-radius: 10px;
+            padding: 3px 15px;
+            margin: -1px;
+            height: auto;
+            font-family: arial;
+            font-size: 25px;
+        }
+
+
+        .text {
+            max-width: 800px;
+            /* Define a largura máxima do texto */
+            margin-left: 50px;
+            /* Margem à esquerda para separar a imagem do texto */
+            text-align: justify;
+            /* Alinha o texto à esquerda */
+            font-size: 16px;
+        }
+
+        .configTabela {
+            background-color: #242527;
+            display: inline-block;
+            padding: 12px 12px;
+            border-radius: 10px;
+            margin-left: 50px;
+        }
+
+        table {
+            border-collapse: separate;
+            width: 700px;
+            margin: auto;
+            background-color: #242527;
+        }
+
+        th,
+        td {
+            border: 3px solid #363636;
+            border-radius: 7px;
+            font-size: 16px;
+            text-align: center;
+            padding: 5px 5px;
+        }
+
+        th {
+            color: #ceac27
+        }
+        
+        #informacoes {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+#habilidade {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+    </style>
+</head>
+
+<!--Background-->
+
+<body style="background-image: url(imagem/background.png)">
+
+    <!--Logo-->
+    <div style="background-color: #242527;margin: -8px; box-shadow: 0px 0px 30px #ceac27">
+        <img src="imagem/Ash_Do_Pokemon.png" width="465px" alt="LogoPokemonAsh" title="PokemonsAsh">
+    </div>
+
+    <!--Titulo-->
+    <h1 style="font-size: 70px; color: #ceac27;"><strong>Pikachu</strong></h1>
+
+
+    <div class="pokemons">
+
+        <!--Pikachu-->
+        <figure>
+            <figcaption style="color:rgb(255, 255, 255); font-size: 200%">N° 0025</figcaption>
+            <a href="Index.html">
+                <img src="imagem/PikachuG.png" alt="Pikachu" title="Pikachu">
+            </a>
+            <figcaption style="font-size: 300%;">Pikachu</figcaption>
+            <tipo style="background-color: #ceac27 ;">Elétrico</tipo>
+        </figure>
+
+        <div>
+            <div class="text">
+
+                <p>Pikachu é um dos Pokémon mais reconhecíveis e queridos, conhecido por sua
+                    aparência fofa e
+                    carismática.
+                    Sua pelagem amarela, pontas de orelha negras e bochechas rubras destacam-se em sua figura pequena e
+                    ágil. Seus olhos expressivos transmitem uma mistura de vivacidade e inteligência, refletindo sua
+                    natureza curiosa e amigável. Pikachu é frequentemente visto com um sorriso travesso, sugerindo uma
+                    disposição brincalhona e afetuosa que o torna um companheiro adorado por treinadores de todas as
+                    idades.
+                </p>
+                <p>Apesar de sua aparência encantadora, Pikachu é um Pokémon poderoso e
+                    versátil, capaz de canalizar
+                    eletricidade em poderosos ataques. Suas bochechas são armazenadoras naturais de eletricidade, e ele
+                    pode
+                    liberar choques elétricos de suas caudas em batalha. Essa habilidade elétrica, combinada com sua
+                    agilidade e astúcia, faz de Pikachu um formidável adversário em batalhas Pokémon. No entanto, sua
+                    dedicação aos seus treinadores e sua natureza leal fazem dele um parceiro inestimável, sempre pronto
+                    para proteger e apoiar aqueles que o cuidam.
+                </p>
+
+            </div>
+
+            <br>
+            <div class="configTabela" id="informacoes">
+                <h1 style="margin-top: 0px; text-align: center;">Informações do Pokémon</h1>
+                <div class="genero">
+                    <table>
+                        <tr>
+                            <th>Altura</th>
+                            <th>Peso</th>
+                            <th>Categoria</th>
+                            <th>Genero</th>
+                            <th>Habilidade</th>
+                        </tr>
+
+                        <tr>
+                            <td>0,4m</td>
+                            <td>6,0kg</td>
+                            <td>Rato Elétrico</td>
+                            <td><img src="imagem/icon_male.png"><sup>/</sup><img src="imagem/icon_female.png"></td>
+                            <td style="position: relative;">
+                                Static
+                                <img src="imagem/icon_question.png"
+                                    style="position: absolute; top: 9px; right: 2px; width: 25px; cursor: pointer;"
+                                    id="botaoImagem" alt="Botão Imagem" onclick="trocarTexto()">
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+            <div style="position: relative;">
+                <div class="configTabela" id="habilidade" style="display:none; position: absolute;  right:38px; width: 330px;">
+                    <h1 style="margin-top: 0px; color:#ceac27;">Static</h1>
+                    <p style="margin: 3px;font-size: 16px; text-align: left;">O Pokémon está carregado de eletricidade
+                        estática e pode paralisar os atacantes que fizerem contato direto com ele.</p>
+                    <img src="imagem/icon_close.png"
+                        style="background-color: #242527; position: absolute; top: 5px; right: 5px; width: 40px; cursor: pointer;"
+                        id="botaoImagem" alt="Botão Imagem" onclick="trocarTexto()">
+                </div>
+            </div>
+
+
+    </div>
+
+<script>
+    function trocarTexto() {
+        var informacoes = document.getElementById("informacoes");
+        var habilidade = document.getElementById("habilidade");
+    
+        if (informacoes.style.display !== "none") {
+            informacoes.style.opacity = 0;
+            setTimeout(function() {
+                informacoes.style.display = "none";
+                habilidade.style.display = "inline-block";
+                setTimeout(function() {
+                    habilidade.style.opacity = 1;
+                }, 50); // Um pequeno atraso para garantir que a transição ocorra após a mudança de visibilidade
+            }, 500); // Tempo correspondente à transição de opacidade
+        } else {
+            habilidade.style.opacity = 0;
+            setTimeout(function() {
+                habilidade.style.display = "none";
+                informacoes.style.display = "inline-block";
+                setTimeout(function() {
+                    informacoes.style.opacity = 1;
+                }, 50); // Um pequeno atraso para garantir que a transição ocorra após a mudança de visibilidade
+            }, 500); // Tempo correspondente à transição de opacidade
+        }
+    }
+</script>
+</body>
+
+</html>

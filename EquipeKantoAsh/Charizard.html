@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charizard</title>
+    <link rel="icon" href="imagem/icone.png">
+
+    <style>
+        /*FonteTexto*/
+
+        @font-face {
+            font-family: 'Flexo';
+            src: url('Fonte/Flexo-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Flexo', sans-serif;
+            font-size: 90%;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+
+        .pokemons {
+            display: flex;
+            /* Alterado para flex para permitir o alinhamento lado a lado */
+            margin-left: 55px;
+            margin-right: 55px;
+            align-items: first baseline;
+            /* Alinha os itens verticalmente */
+
+        }
+
+
+        .pokemons img {
+            width: 300px;
+            height: auto;
+            background-image: url(imagem/pokebola.png);
+            background-position: center;
+            background-size: contain;
+            background-color: #363636;
+            border-radius: 15px;
+        }
+
+        .genero img {
+            width: 25px;
+            background-color: #242527;
+        }
+
+        .pokemons figure:hover {
+            transform: scale(1.1);
+        }
+
+
+        .pokemons figure {
+            display: inline-block;
+            margin: 10px;
+            background-color: #242527;
+            border-radius: 10px;
+            padding: 15px 5px;
+            transition: transform 0.3s ease;
+            display: inline-block;
+            box-shadow: 0px 0px 50px #f05030;
+        }
+
+
+        .pokemons tipo {
+            display: inline-block;
+            border: 3px solid #1f1f20;
+            border-radius: 10px;
+            padding: 3px 15px;
+            margin: -1px;
+            height: auto;
+            font-family: arial;
+            font-size: 25px;
+        }
+
+
+        .text {
+            max-width: 800px;
+            /* Define a largura máxima do texto */
+            margin-left: 50px;
+            /* Margem à esquerda para separar a imagem do texto */
+            text-align: justify;
+            /* Alinha o texto à esquerda */
+            font-size: 16px;
+        }
+
+        .configTabela {
+            background-color: #242527;
+            display: inline-block;
+            padding: 12px 12px;
+            border-radius: 10px;
+            margin-left: 50px;
+        }
+
+        table {
+            border-collapse: separate;
+            width: 700px;
+            margin: auto;
+            background-color: #242527;
+        }
+
+        th,
+        td {
+            border: 3px solid #363636;
+            border-radius: 7px;
+            font-size: 16px;
+            text-align: center;
+            padding: 5px 5px;
+        }
+
+        th {
+            color: #f05030
+        }
+
+        #informacoes {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+#habilidade {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+    </style>
+</head>
+
+<!--Background-->
+
+<body style="background-image: url(imagem/background.png)">
+
+    <!--Logo-->
+    <div style="background-color: #242527;margin: -8px; box-shadow: 0px 0px 30px #f05030">
+        <img src="imagem/Ash_Do_Pokemon.png" width="465px" alt="LogoPokemonAsh" title="PokemonsAsh">
+    </div>
+
+    <!--Titulo-->
+    <h1 style="font-size: 70px; color: #f05030;"><strong>Charizard</strong></h1>
+
+
+    <div class="pokemons">
+
+        <!--Charizard-->
+
+        <figure>
+            <figcaption style="color:rgb(255, 255, 255); font-size: 150%">N° 0006</figcaption>
+            <a href="Index.html">
+                <img src="imagem/CharizardG.png" alt="Charizard" title="Charizard">
+            </a>
+            <figcaption style="font-size:200%;">Charizard</figcaption>
+            <tipo style="background-color: #f05030">Fogo</tipo>
+            <tipo style="background-color: #a890f0 ; ">Voador</tipo>
+        </figure>
+
+
+
+        <div>
+            <div class="text">
+
+                <p>Charizard é uma figura icônica no mundo Pokémon, conhecida por sua imponência e ferocidade. Com suas
+                    asas majestosas e chamas ardentes que crepitam em sua cauda, Charizard emana uma aura de poder e
+                    nobreza. Sua pele escamosa e tonalidade laranja vibrante conferem-lhe uma aparência intimidadora,
+                    enquanto seus olhos penetrantes refletem uma inteligência afiada e determinação inabalável.
+                </p>
+                <p>Além de sua presença imponente, Charizard é reconhecido por suas habilidades em batalha, sendo um
+                    mestre do tipo Fogo e Voador. Com seu sopro de fogo ardente e poderosos ataques de voo, ele domina o
+                    céu e o campo de batalha com igual destreza. Apesar de sua natureza orgulhosa e independente,
+                    Charizard também demonstra uma lealdade profunda para com seu treinador quando conquistado com
+                    respeito e confiança, tornando-se um aliado formidável em jornadas Pokémon.
+                </p>
+
+            </div>
+
+            <br>
+            <div class="configTabela" id="informacoes">
+                <h1 style="margin-top: 0px; text-align: center;">Informações do Pokémon</h1>
+                <div class="genero">
+                    <table>
+                        <tr>
+                            <th>Altura</th>
+                            <th>Peso</th>
+                            <th>Categoria</th>
+                            <th>Genero</th>
+                            <th>Habilidade</th>
+                        </tr>
+                        <td>1,7m</td>
+                        <td>90,5kg</td>
+                        <td>Pokémon Flamejante</td>
+                        <td><img src="imagem/icon_male.png"><sup>/</sup><img src="imagem/icon_female.png"></td>
+                        <td style="position: relative;">
+                            Blaze
+                            <img src="imagem/icon_question.png"
+                                style="position: absolute; top: 9px; right: 2px; width: 25px; cursor: pointer;"
+                                id="botaoImagem" alt="Botão Imagem" onclick="trocarTexto()">
+                        </td>
+                    </table>
+
+                </div>
+            </div>
+            <div style="position: relative;">
+                <div class="configTabela" id="habilidade"
+                    style="display:none; position: absolute;  right:38px; width: 330px;">
+                    <h1 style="margin-top: 0px; color:#f05030;">Blaze</h1>
+                    <p style="margin: 3px;font-size: 16px; text-align: left;">Aumenta os movimentos do tipo Fire quando
+                        o HP do Pokémon está baixo.</p>
+                    <img src="imagem/icon_close.png"
+                        style="background-color: #242527; position: absolute; top: 5px; right: 5px; width: 40px; cursor: pointer;"
+                        id="botaoImagem" alt="Botão Imagem" onclick="trocarTexto()">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function trocarTexto() {
+        var informacoes = document.getElementById("informacoes");
+        var habilidade = document.getElementById("habilidade");
+    
+        if (informacoes.style.display !== "none") {
+            informacoes.style.opacity = 0;
+            setTimeout(function() {
+                informacoes.style.display = "none";
+                habilidade.style.display = "inline-block";
+                setTimeout(function() {
+                    habilidade.style.opacity = 1;
+                }, 50); // Um pequeno atraso para garantir que a transição ocorra após a mudança de visibilidade
+            }, 500); // Tempo correspondente à transição de opacidade
+        } else {
+            habilidade.style.opacity = 0;
+            setTimeout(function() {
+                habilidade.style.display = "none";
+                informacoes.style.display = "inline-block";
+                setTimeout(function() {
+                    informacoes.style.opacity = 1;
+                }, 50); // Um pequeno atraso para garantir que a transição ocorra após a mudança de visibilidade
+            }, 500); // Tempo correspondente à transição de opacidade
+        }
+    }
+    </script>
+
+
+</body>
+
+</html>

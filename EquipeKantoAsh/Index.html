@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipe Kanto do Ash</title>
+    <link rel="icon" href="imagem/icone.png">
+
+    <style>
+        /*FonteTexto*/
+
+        @font-face {
+            font-family: 'Flexo';
+            src: url('Fonte/Flexo-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Flexo', sans-serif;
+            font-size: 90%;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+
+        .pokemons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px 3px;
+            margin-left: 110px;
+            margin-right: 110px;
+        }
+
+.pokemon icon {
+    width: 10px
+}
+        .pokemons img {
+            width: 200px;
+            height: auto;
+            background-image: url(imagem/pokebola.png);
+            background-position: center;
+            background-size: contain;
+            background-color: #363636;
+            border-radius: 15px;
+        }
+
+        .pokemons figure:hover {
+            transform: scale(1.1);
+        }
+
+
+        .pokemons figure {
+            width: 200px;
+            margin: 10px;
+            background-color: #242527;
+            border-radius: 10px;
+            padding: 15px 5px;
+            transition: transform 0.3s ease;
+        }
+
+
+        .pokemons tipo {
+            display: inline-block;
+            border: 3px solid #1f1f20;
+            border-radius: 10px;
+            padding: 3px 15px;
+            margin: -1px;
+            height: auto;
+            font-family: arial;
+            font-size: 110%;
+        }
+    </style>
+</head>
+
+<!--Background-->
+
+<body style="background-image: url(imagem/background.png)">
+
+    <!--Logo-->
+    <div style="background-color: #242527;margin: -8px;; box-shadow: 0px 10px  40px #3759a3">
+        <img src="imagem/Ash_Do_Pokemon.png" width="465px" alt="LogoPokemonAsh" title="PokemonsAsh">
+    </div>
+
+    <!--Titulo-->
+    <br>
+    <h1 style="font-size: 60px"><strong>Pokémons de Ash em Kanto</strong></h1>
+    <br>
+
+
+
+    <div class="pokemons">
+
+        <!--Pikachu-->
+
+        <figure>
+
+            <figcaption style="color:rgb(255, 255, 255); font-size: 150%">N° 0025</figcaption>
+            <a href="Pikachu.html">
+                <img src="imagem/Pikachu.png" alt="Pikachu" title="Pikachu">
+            </a>
+            <figcaption style="font-size: 200%;">Pikachu</figcaption>
+            <tipo style="background-color: #ceac27 ;">Elétrico</tipo>
+        </figure>
+
+
+
+        <!--Bulbasaur-->
+
+        <figure>
+            <figcaption style="color:rgb(255, 255, 255); font-size: 150%">N° 0001</figcaption>
+            <a href="Bulbasaur.html">
+                <img src="imagem/Bulbasaur.png" alt="Bulbasaur" title="Bulbasaur">
+            </a>
+            <figcaption style="font-size:200%">Bulbasaur</figcaption>
+            <tipo style="background-color: #558d3a ; ">Planta</tipo>
+            <tipo style="background-color: #a040a0; ">Veneno</tipo>
+        </figure>
+
+
+        <!--Charizard-->
+
+        <figure>
+            <figcaption style="color:rgb(255, 255, 255); font-size: 150%">N° 0006</figcaption>
+            <a href="Charizard.html">
+                <img src="imagem/Charizard.png" alt="Charizard" title="Charizard">
+            </a>
+            <figcaption style="font-size:200%;">Charizard</figcaption>
+            <tipo style="background-color: #f05030">Fogo</tipo>
+            <tipo style="background-color: #a890f0 ; ">Voador</tipo>
+        </figure>
+
+
+        <!--Squirtle-->
+
+        <figure style="margin-top: 10px;">
+            <figcaption style="color:rgb(255, 255, 255); font-size: 150%">N° 0007</figcaption>
+            <a href="Squirtle.html">
+                <img src="imagem/Squirtle.png" alt="Squirtle" title="Squirtle">
+            </a>
+            <figcaption style="font-size:200%;">Squirtle</figcaption>
+            <tipo style="background-color: #6890f0;">Água</tipo>
+        </figure>
+
+
+        <!--Butterfree-->
+
+        <figure>
+            <figcaption style="color:rgb(255, 255, 255); font-size: 150%">N° 0012</figcaption>
+            <a href="Butterfree.html">
+                <img src="imagem/Butterfree.png" alt="Butterfree" title="Butterfree">
+            </a>
+            <figcaption style="font-size: 200%">Butterfree</figcaption>
+            <tipo style="background-color: #aabb22;">Inseto</tipo>
+            <tipo style="background-color: #a890f0 ; ">Voador</tipo>
+        </figure>
+
+
+
+
+        <!--Pidgeot-->
+
+        <figure>
+            <figcaption style="color:rgb(255, 255, 255); font-size: 150%">N° 0018</figcaption>
+            <a href="Pidgeot.html">
+                <img src="imagem/Pidgeot.png" alt="Pidgeot" title="Pidgeot">
+            </a>
+            <figcaption style="font-size:200%">Pidgeot</figcaption>
+            <tipo style="background-color: #a8a878; ">Normal</tipo>
+            <tipo style="background-color: #a890f0; ">Voador</tipo>
+        </figure>
+
+
+        <!--Kingler-->
+
+        <figure style="margin-top: 10px">
+            <figcaption style="color:rgb(255, 255, 255); font-size: 150%">N° 0099</figcaption>
+            <a href="Kingler.html">
+                <img src="imagem/Kingler.png" alt="Kingler" title="Kingler">
+            </a>
+            <figcaption style="font-size:200%">Kingler</figcaption>
+            <tipo style="background-color: #6890f0;">Água</tipo>
+        </figure>
+
+        <!--Tauros-->
+
+        <figure style="margin-top: 10px">
+            <figcaption style="color:rgb(255, 255, 255); font-size: 150%">N° 0128</figcaption>
+            <a href="Tauros.html">
+                <img src="imagem/Tauros.png" alt="Tauros" title="Tauros">
+            </a>
+            <figcaption style="font-size:200%">Tauros</figcaption>
+            <tipo style="background-color: #a8a878; ">Normal</tipo>
+        </figure>
+
+
+        <!--Primeape-->
+
+        <figure style="margin-top: 10px">
+            <figcaption style="color:rgb(255, 255, 255); font-size: 150%">N° 0057</figcaption>
+            <a href="Primeape.html">
+                <img src="imagem/Primeape.png" alt="Primeape" title="Primeape">
+            </a>
+            <figcaption style="font-size:200%">Primeape</figcaption>
+            <tipo style="background-color: #903028; ">Lutador</tipo>
+        </figure>
+
+        <!--Muk-->
+
+        <figure style="margin-top: 10px">
+            <figcaption style="color:rgb(255, 255, 255); font-size: 150%">N° 0089</figcaption>
+            <a href="Muk.html" ;>
+                <img src="imagem/Muk.png" alt="Muk" title="Muk">
+            </a>
+            <figcaption style="font-size:200%">Muk</figcaption>
+            <tipo style="background-color: #a040a0; ">Veneno</tipo>
+        </figure>
+
+
+        <!--Lapras-->
+
+        <figure>
+            <figcaption style="color:rgb(255, 255, 255); font-size: 150%">N° 0131</figcaption>
+            <a href="Lapras.html">
+                <img src="imagem/Lapras.png" alt="Lapras" title="Lapras">
+            </a>
+            <figcaption style="font-size:200%">Lapras</figcaption>
+            <tipo style="background-color: #6890f0;">Água</tipo>
+            <tipo style="background-color: #41bbbb;">Gelo</tipo>
+        </figure>
+
+
+        <!--Snorlax-->
+
+        <figure>
+            <figcaption style="color:rgb(255, 255, 255); font-size: 150%">N° 0143</figcaption>
+            <a href="Snorlax.html">
+                <img src="imagem/Snorlax.png" alt="Snorlax" title="Snorlax">
+            </a>
+            <figcaption style="font-size:200%">Snorlax</figcaption>
+            <tipo style="background-color: #a8a878; ">Normal</tipo>
+        </figure>
+
+
+
+        <!--Fontes-->
+        <figure style="width: 130px; height: 130px;">
+            <figcaption style="color:rgb(255, 255, 255); font-size: 150%">Fontes</figcaption>
+            <br>
+
+            <a style="color: white;" href="https://www.pokemon.com/br/pokedex" target="_blank">
+                <tipo style="background-color: #ff0000 ; ">Fonte-1</tipo>
+            </a>
+            <a style="color: white;" href="https://www.pokemon.com/br/pokedex" target="_blank">
+                <tipo style="background-color: #313131; ">Fonte-2</tipo>
+            </a>
+            <a style="color: black;" href="https://www.poke-blast-news.net/p/pokedex.html" target="_blank">
+                <tipo style="background-color: #bfbfbf; ">Fonte-3</tipo>
+            </a>
+        </figure>
+
+    </div>
+
+
+</body>
+
+</html>
